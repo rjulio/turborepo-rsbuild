@@ -1,0 +1,26 @@
+.header {
+	align-items: center;
+	background: #cdcdcd;
+	color: blue;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 10px;
+}
+
+.main {
+	display: flex;
+	flex: 1;
+}
+
+.container {
+	padding: 10px 10px;
+}
+
+.footer {
+	align-items: center;
+	background: #dedede;
+	display: flex;
+	justify-content: center;
+	margin-top: auto;
+	padding: 5px 10px;
+}

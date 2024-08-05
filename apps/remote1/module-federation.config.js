@@ -1,20 +1,34 @@
 import { dependencies } from "./package.json";
 
 export const mfConfig = {
+  server: {
+    port: 3001,
+  },
   name: "remote1",
+  remotes: {
+    host: "host@http://localhost:3000/remoteEntry.js",
+  },
   exposes: {
-    "./Remote1Home": "./src/pages/Remote1Home",
+    "./Page1": "./src/pages/Page1",
+    "./Page2": "./src/pages/Page2",
   },
   filename: "remoteEntry.js",
   shared: {
     ...dependencies,
     react: {
+      eager: true,
       singleton: true,
       requiredVersion: dependencies.react,
     },
     "react-dom": {
+      eager: true,
       singleton: true,
       requiredVersion: dependencies["react-dom"],
+    },
+    "react-router-dom": {
+      eager: true,
+      singleton: true,
+      requiredVersion: dependencies["react-router-dom"],
     },
   },
 };

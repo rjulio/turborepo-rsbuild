@@ -1,3 +1,3 @@
 export default function HostHome() {
-	return <h1>Host home</h1>;
+	return <h1>Host Page 1</h1>;
 }
