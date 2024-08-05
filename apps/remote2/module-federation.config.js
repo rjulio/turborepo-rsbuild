@@ -1,16 +1,16 @@
 import { dependencies } from "./package.json";
 
 export const mfConfig = {
-  name: "host",
   server: {
-    port: 3000,
+    port: 3002,
   },
+  name: "remote2",
   remotes: {
-    remote1: "remote1@http://localhost:3001/remoteEntry.js",
-    remote2: "remote2@http://localhost:3002/remoteEntry.js",
+    host: "host@http://localhost:3000/remoteEntry.js",
   },
   exposes: {
-    "./Button": "./src/components/Button",
+    "./Page1": "./src/pages/Page1",
+    "./Page2": "./src/pages/Page2",
   },
   filename: "remoteEntry.js",
   shared: {

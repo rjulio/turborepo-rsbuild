@@ -11,6 +11,8 @@ export default function Page1() {
 				<Button href="/host2">Host 2</Button>
 				<Button href="/remote1-2">Remote 1-1</Button>
 				<Button href="/remote1-2">Remote 1-2</Button>
+				<Button href="/remote2-1">Remote 2-1</Button>
+				<Button href="/remote2-2">Remote 2-2</Button>
 			</div>
 		</div>
 	);

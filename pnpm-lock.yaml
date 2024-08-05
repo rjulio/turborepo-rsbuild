@@ -71,7 +71,7 @@ importers:
         specifier: 1.0.1-beta.10
         version: 1.0.1-beta.10(@rsbuild/core@1.0.1-beta.10)
 
-  packages/ui:
+  apps/remote2:
     dependencies:
       react:
         specifier: ^18.3.1
@@ -79,6 +79,9 @@ importers:
       react-dom:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
+      react-router-dom:
+        specifier: ^6.26.0
+        version: 6.26.0(react-dom@18.3.1)(react@18.3.1)
     devDependencies:
       '@rsbuild/core':
         specifier: 1.0.1-beta.10
