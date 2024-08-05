@@ -1,0 +1,22 @@
+{
+  "name": "host",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "rsbuild dev",
+    "build": "rsbuild build",
+    "preview": "rsbuild preview"
+  },
+  "dependencies": {
+    "@module-federation/enhanced": "^0.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router": "^6.26.0",
+    "react-router-dom": "^6.26.0"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "1.0.1-beta.10",
+    "@rsbuild/plugin-react": "1.0.1-beta.10",
+    "rspack": "link:@module-federation/enhanced/rspack"
+  }
+}
