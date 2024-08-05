@@ -1,18 +1,13 @@
 .header {
 	align-items: center;
 	background: #cdcdcd;
-	color: blue;
 	display: flex;
+	font-weight: bold;
 	justify-content: space-between;
 	padding: 5px 10px;
 }
 
 .main {
-	display: flex;
-	flex: 1;
-}
-
-.container {
 	padding: 10px 10px;
 }
 

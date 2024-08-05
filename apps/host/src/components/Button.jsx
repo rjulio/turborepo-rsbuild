@@ -1,5 +1,10 @@
+import "./Button.css";
 import { Link } from "react-router-dom";
 
 export default function Button({ children, href }) {
-	return <Link to={href}>{children}</Link>;
+	return (
+		<Link className="button" to={href}>
+			{children}
+		</Link>
+	);
 }

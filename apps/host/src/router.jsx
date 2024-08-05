@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import HostHome from "./pages/Page1";
-import HostAbout from "./pages/Page1";
+import Page1 from "./pages/Page1";
+import Page2 from "./pages/Page2";
 import Layout from "./components/Layout";
 
 import RemotePage1 from "remote1/Page1";
@@ -12,10 +12,10 @@ export default function Router() {
 		<BrowserRouter>
 			<Layout>
 				<Routes>
-					<Route path="/" element={<HostHome />} />
-					<Route path="/about" element={<HostAbout />} />
-					<Route path="/remote1" element={<RemotePage1 />} />
-					<Route path="/remote2" element={<RemotePage2 />} />
+					<Route path="/" element={<Page1 />} />
+					<Route path="/host2" element={<Page2 />} />
+					<Route path="/remote1-1" element={<RemotePage1 />} />
+					<Route path="/remote1-2" element={<RemotePage2 />} />
 				</Routes>
 			</Layout>
 		</BrowserRouter>
