@@ -1,6 +1,13 @@
 import { dependencies } from "./package.json";
 
+console.info(process.env);
+
 export const mfConfig = {
+  source: {
+    define: {
+      "process.env": JSON.stringify(process.env),
+    },
+  },
   server: {
     port: 3002,
   },
