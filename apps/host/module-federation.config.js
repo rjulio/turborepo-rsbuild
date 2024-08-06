@@ -1,6 +1,9 @@
 import { dependencies } from "./package.json";
 
-console.info("import.meta", import.meta.env.PUBLIC_REMOTE_1);
+const PUBLIC_REMOTE_1 =
+  process.env.PUBLIC_REMOTE_1 || "https://monorepo-remote1.vercel.app";
+const PUBLIC_REMOTE_2 =
+  process.env.PUBLIC_REMOTE_2 || "https://monorepo-remote2.vercel.app";
 
 export const mfConfig = {
   name: "host",
@@ -8,8 +11,8 @@ export const mfConfig = {
     port: 3000,
   },
   remotes: {
-    remote1: `remote1@${import.meta.env.PUBLIC_REMOTE_1}/remoteEntry.js`,
-    remote2: `remote2@${import.meta.env.PUBLIC_REMOTE_2}/remoteEntry.js`,
+    remote1: `remote1@${PUBLIC_REMOTE_1}/remoteEntry.js`,
+    remote2: `remote2@${PUBLIC_REMOTE_2}/remoteEntry.js`,
   },
   exposes: {
     "./Button": "./src/components/Button",
