@@ -1,7 +1,5 @@
 import { dependencies } from "./package.json";
 
-console.info("testing", process.env);
-
 export const mfConfig = {
   name: "host",
   server: {
