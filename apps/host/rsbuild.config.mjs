@@ -1,9 +1,14 @@
-import { defineConfig } from "@rsbuild/core";
+import { defineConfig, loadEnv } from "@rsbuild/core";
 import { pluginReact } from "@rsbuild/plugin-react";
 import { mfConfig } from "./module-federation.config";
 
+const { publicVars } = loadEnv({ prefixes: ["PUBLIC_"] });
+
 export default defineConfig({
   plugins: [pluginReact()],
+  source: {
+    define: publicVars,
+  },
   html: {
     title: "Host App",
   },
