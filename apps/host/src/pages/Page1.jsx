@@ -1,5 +1,4 @@
-import Button from "../components/Button";
-import Layout from "../components/Layout";
+import { Button, Layout } from "@repo/ui/index";
 
 export default function Page1() {
 	return (

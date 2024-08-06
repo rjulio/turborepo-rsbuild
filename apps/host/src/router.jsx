@@ -1,8 +1,7 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Layout from "./components/Layout";
-import Loading from "./components/Loading";
+import { Loading } from "@repo/ui/index";
 // host
 import Home from "./pages/Home";
 import Page1 from "./pages/Page1";

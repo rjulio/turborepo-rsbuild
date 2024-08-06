@@ -9,10 +9,6 @@ export const mfConfig = {
     remote1: `remote1@${process.env.PUBLIC_REMOTE_1}/remoteEntry.js`,
     remote2: `remote2@${process.env.PUBLIC_REMOTE_2}/remoteEntry.js`,
   },
-  exposes: {
-    "./Button": "./src/components/Button",
-    "./Layout": "./src/components/Layout",
-  },
   filename: "remoteEntry.js",
   shared: {
     ...dependencies,

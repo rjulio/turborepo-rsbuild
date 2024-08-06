@@ -1,5 +1,6 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
   "globalEnv": ["PUBLIC_HOST", "PUBLIC_REMOTE_2", "PUBLIC_REMOTE_1"],
   "globalDependencies": ["**/env.*local"],
   "globalPassThroughEnv": ["PUBLIC_HOST", "PUBLIC_REMOTE_2", "PUBLIC_REMOTE_1"],

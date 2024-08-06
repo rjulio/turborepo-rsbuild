@@ -5,9 +5,6 @@ export const mfConfig = {
     port: 3001,
   },
   name: "remote1",
-  remotes: {
-    host: `host@${process.env.PUBLIC_HOST}/remoteEntry.js`,
-  },
   exposes: {
     "./Page1": "./src/pages/Page1",
     "./Page2": "./src/pages/Page2",

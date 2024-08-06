@@ -1,5 +1,4 @@
-import Button from "host/Button";
-import Layout from "host/Layout";
+import { Button, Layout } from "@repo/ui/index";
 
 export default function Page2() {
 	return (
