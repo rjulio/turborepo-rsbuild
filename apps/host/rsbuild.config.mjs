@@ -4,11 +4,6 @@ import { mfConfig } from "./module-federation.config";
 
 export default defineConfig({
   plugins: [pluginReact()],
-  source: {
-    define: {
-      "process.env": JSON.stringify(process.env),
-    },
-  },
   server: {
     port: 3000,
     headers: {

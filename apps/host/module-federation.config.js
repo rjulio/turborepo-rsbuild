@@ -8,8 +8,8 @@ export const mfConfig = {
     port: 3000,
   },
   remotes: {
-    remote1: `remote1@${process.env.REACT_APP_REMOTE_1}/remoteEntry.js`,
-    remote2: `remote2@${process.env.REACT_APP_REMOTE_2}/remoteEntry.js`,
+    remote1: `remote1@${process.env.PUBLIC_REMOTE_1}/remoteEntry.js`,
+    remote2: `remote2@${process.env.PUBLIC_REMOTE_2}/remoteEntry.js`,
   },
   exposes: {
     "./Button": "./src/components/Button",
