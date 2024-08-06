@@ -7,7 +7,17 @@ const { publicVars } = loadEnv({ prefixes: ["PUBLIC_"] });
 export default defineConfig({
   plugins: [pluginReact()],
   source: {
-    define: publicVars,
+    define: {
+      "import.meta.env.PUBLIC_REMOTE_1": JSON.stringify(
+        import.meta.env.PUBLIC_REMOTE_1,
+      ),
+      "import.meta.env.PUBLIC_REMOTE_2": JSON.stringify(
+        import.meta.env.PUBLIC_REMOTE_2,
+      ),
+      "import.meta.env.PUBLIC_HOST": JSON.stringify(
+        import.meta.env.PUBLIC_HOST,
+      ),
+    },
   },
   html: {
     title: "Host App",
