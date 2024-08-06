@@ -1,5 +1,6 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "globalEnv": ["PUBLIC_HOST", "PUBLIC_REMOTE_1", "PUBLIC_REMOTE_2"],
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
