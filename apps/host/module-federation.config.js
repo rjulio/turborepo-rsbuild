@@ -11,6 +11,7 @@ export const mfConfig = {
   },
   exposes: {
     "./Button": "./src/components/Button",
+    "./Layout": "./src/components/Layout",
   },
   filename: "remoteEntry.js",
   shared: {

@@ -9,6 +9,23 @@
 
 .main {
 	padding: 10px 10px;
+
+	.navigation {
+		align-items: center;
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		flex-wrap: wrap;
+		gap: 10px;
+		justify-content: flex-start;
+	}
+
+	hr {
+		border-color: #fdfdfd;
+		height: 1px;
+		margin: 10px 0;
+		width: 100%;
+	}
 }
 
 .footer {

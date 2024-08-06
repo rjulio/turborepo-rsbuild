@@ -1,10 +1,11 @@
 import Button from "../components/Button";
+import Layout from "../components/Layout";
 
 export default function Page2() {
 	return (
-		<>
-			<h1>Host Page 2</h1>
+		<Layout app="Host">
+			<h1>Page 2</h1>
 			<Button href="/">Página principal</Button>
-		</>
+		</Layout>
 	);
 }
