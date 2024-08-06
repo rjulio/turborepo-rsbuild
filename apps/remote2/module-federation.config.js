@@ -6,7 +6,7 @@ export const mfConfig = {
   },
   name: "remote2",
   remotes: {
-    host: "host@http://localhost:3000/remoteEntry.js",
+    host: `host@${process.env.REACT_APP_HOST}/remoteEntry.js`,
   },
   exposes: {
     "./Page1": "./src/pages/Page1",

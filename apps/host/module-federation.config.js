@@ -6,8 +6,8 @@ export const mfConfig = {
     port: 3000,
   },
   remotes: {
-    remote1: "remote1@http://localhost:3001/remoteEntry.js",
-    remote2: "remote2@http://localhost:3002/remoteEntry.js",
+    remote1: `remote1@${process.env.REACT_APP_REMOTE_1}/remoteEntry.js`,
+    remote2: `remote2@${process.env.REACT_APP_REMOTE_2}/remoteEntry.js`,
   },
   exposes: {
     "./Button": "./src/components/Button",
