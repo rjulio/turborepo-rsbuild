@@ -1,5 +1,7 @@
 import { dependencies } from "./package.json";
 
+console.info("url", process.env.REACT_APP_HOST);
+
 export const mfConfig = {
   server: {
     port: 3002,
