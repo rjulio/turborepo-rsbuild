@@ -5,6 +5,9 @@ const PUBLIC_REMOTE_1 =
 const PUBLIC_REMOTE_2 =
   process.env.PUBLIC_REMOTE_2 || "https://monorepo-remote2.vercel.app";
 
+console.info("testing", import.meta.env);
+console.info("testing", process.env);
+
 export const mfConfig = {
   name: "host",
   server: {
