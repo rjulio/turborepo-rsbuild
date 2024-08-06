@@ -1,13 +1,15 @@
 import { dependencies } from "./package.json";
 
+console.info("import.meta", import.meta.env.PUBLIC_REMOTE_1);
+
 export const mfConfig = {
   name: "host",
   server: {
     port: 3000,
   },
   remotes: {
-    remote1: `remote1@${process.env.PUBLIC_REMOTE_1}/remoteEntry.js`,
-    remote2: `remote2@${process.env.PUBLIC_REMOTE_2}/remoteEntry.js`,
+    remote1: `remote1@${import.meta.env.PUBLIC_REMOTE_1}/remoteEntry.js`,
+    remote2: `remote2@${import.meta.env.PUBLIC_REMOTE_2}/remoteEntry.js`,
   },
   exposes: {
     "./Button": "./src/components/Button",
