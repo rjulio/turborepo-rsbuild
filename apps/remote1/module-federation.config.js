@@ -1,15 +1,12 @@
 import { dependencies } from "./package.json";
 
-const PUBLIC_HOST =
-  process.env.PUBLIC_HOST || "https://monorepo-host.vercel.app";
-
 export const mfConfig = {
   server: {
     port: 3001,
   },
   name: "remote1",
   remotes: {
-    host: `host@${PUBLIC_HOST}/remoteEntry.js`,
+    host: `host@${process.env.PUBLIC_HOST}/remoteEntry.js`,
   },
   exposes: {
     "./Page1": "./src/pages/Page1",
