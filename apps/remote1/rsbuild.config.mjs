@@ -4,6 +4,9 @@ import { mfConfig } from "./module-federation.config";
 
 export default defineConfig({
   plugins: [pluginReact()],
+  html: {
+    title: "Remote 1 App",
+  },
   server: {
     port: 3001,
     headers: {

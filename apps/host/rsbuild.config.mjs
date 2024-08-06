@@ -4,6 +4,9 @@ import { mfConfig } from "./module-federation.config";
 
 export default defineConfig({
   plugins: [pluginReact()],
+  html: {
+    title: "Host App",
+  },
   server: {
     port: 3000,
     headers: {

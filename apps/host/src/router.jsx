@@ -1,17 +1,18 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import Layout from "./components/Layout";
+import Loading from "./components/Loading";
+// host
 import Home from "./pages/Home";
 import Page1 from "./pages/Page1";
 import Page2 from "./pages/Page2";
-import Layout from "./components/Layout";
-import Loading from "./components/Loading";
-
-const Remote1Page1 = lazy(() => import("remote1/Page1"));
-const Remote1Page2 = lazy(() => import("remote1/Page2"));
-
-const Remote2Page1 = lazy(() => import("remote2/Page1"));
-const Remote2Page2 = lazy(() => import("remote2/Page2"));
+// remote 1
+const R1Page1 = lazy(() => import("remote1/Page1"));
+const R1Page2 = lazy(() => import("remote1/Page2"));
+// remote 2
+const R2Page1 = lazy(() => import("remote2/Page1"));
+const R2Page2 = lazy(() => import("remote2/Page2"));
 
 export default function Router() {
 	return (
@@ -24,7 +25,7 @@ export default function Router() {
 					path="/remote1-1"
 					element={
 						<Suspense fallback={<Loading />}>
-							<Remote1Page1 />
+							<R1Page1 />
 						</Suspense>
 					}
 				/>
@@ -32,7 +33,7 @@ export default function Router() {
 					path="/remote1-2"
 					element={
 						<Suspense fallback={<Loading />}>
-							<Remote1Page2 />
+							<R1Page2 />
 						</Suspense>
 					}
 				/>
@@ -40,7 +41,7 @@ export default function Router() {
 					path="/remote2-1"
 					element={
 						<Suspense fallback={<Loading />}>
-							<Remote2Page1 />
+							<R2Page1 />
 						</Suspense>
 					}
 				/>
@@ -48,7 +49,7 @@ export default function Router() {
 					path="/remote2-2"
 					element={
 						<Suspense fallback={<Loading />}>
-							<Remote2Page2 />
+							<R2Page2 />
 						</Suspense>
 					}
 				/>
