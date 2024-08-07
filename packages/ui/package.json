@@ -12,11 +12,16 @@
     "generate:component": "turbo gen react-component"
   },
   "devDependencies": {
+    "@eslint/js": "^9.8.0",
+    "@repo/eslint-config": "workspace:*",
     "@turbo/gen": "^1.12.4",
     "@types/node": "^20.11.24",
     "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",
-    "eslint": "^8.57.0",
+    "eslint": "^9.8.0",
+    "eslint-plugin-react": "^7.35.0",
+    "globals": "^15.9.0",
+    "prop-types": "^15.8.1",
     "react-router-dom": "^6.26.0"
   },
   "dependencies": {

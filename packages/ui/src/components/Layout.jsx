@@ -1,4 +1,10 @@
+import PropTypes from "prop-types";
 import "./Layout.css";
+
+Layout.propTypes = {
+	children: PropTypes.node,
+	app: PropTypes.string,
+};
 
 export default function Layout({ children, app }) {
 	return (
